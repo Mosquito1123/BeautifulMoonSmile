@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="weathericons-regular-webfont.ttf">
+            <string>WeatherIcons-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Igc-Dy-S5K" customClass="PhaseTableViewCell" customModule="BeautifulLunaSmile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Igc-Dy-S5K" id="ur6-Zd-fXA">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQ6-Kc-vks">
+                        <rect key="frame" x="30" y="-1.5" width="24" height="46.5"/>
+                        <fontDescription key="fontDescription" name="WeatherIcons-Regular" family="Weather Icons" pointSize="32"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunday, March 18th" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YGa-2w-6ud">
+                        <rect key="frame" x="78" y="13" width="206" height="18"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="WQ6-Kc-vks" secondAttribute="centerY" id="0dm-Bf-BhL"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="YGa-2w-6ud" secondAttribute="trailing" constant="20" id="I1C-tb-3G2"/>
+                    <constraint firstItem="YGa-2w-6ud" firstAttribute="leading" secondItem="ur6-Zd-fXA" secondAttribute="leadingMargin" constant="62" id="UGV-YC-psq"/>
+                    <constraint firstAttribute="centerY" secondItem="YGa-2w-6ud" secondAttribute="centerY" id="lfM-1H-d9V"/>
+                    <constraint firstItem="WQ6-Kc-vks" firstAttribute="leading" secondItem="ur6-Zd-fXA" secondAttribute="leading" constant="30" id="ntD-O5-tMI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateLabel" destination="YGa-2w-6ud" id="fs1-ik-bNx"/>
+                <outlet property="iconLabel" destination="WQ6-Kc-vks" id="yXH-vD-95z"/>
+            </connections>
+            <point key="canvasLocation" x="521" y="231"/>
+        </tableViewCell>
+    </objects>
+</document>

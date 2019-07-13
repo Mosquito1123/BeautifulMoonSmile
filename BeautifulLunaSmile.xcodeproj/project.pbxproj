@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F3CD7C1A22D9DC31009D0191 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD7C1922D9DC31009D0191 /* AppDelegate.swift */; };
+		F3CD7C1C22D9DC31009D0191 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD7C1B22D9DC31009D0191 /* ViewController.swift */; };
+		F3CD7C1F22D9DC31009D0191 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CD7C1D22D9DC31009D0191 /* Main.storyboard */; };
+		F3CD7C2122D9DC32009D0191 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3CD7C2022D9DC32009D0191 /* Assets.xcassets */; };
+		F3CD7C2422D9DC32009D0191 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CD7C2222D9DC32009D0191 /* LaunchScreen.storyboard */; };
+		F3CD7C2D22D9DCF0009D0191 /* LunarHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD7C2C22D9DCF0009D0191 /* LunarHeaderView.swift */; };
+		F3CD7C2F22D9DD1C009D0191 /* LunarHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3CD7C2E22D9DD1C009D0191 /* LunarHeaderView.xib */; };
+		F3CD7C3122D9DD6F009D0191 /* LunarPhaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD7C3022D9DD6F009D0191 /* LunarPhaseView.swift */; };
+		F3CD7C3422D9DDAD009D0191 /* PhaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD7C3222D9DDAD009D0191 /* PhaseTableViewCell.swift */; };
+		F3CD7C3522D9DDAD009D0191 /* PhaseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3CD7C3322D9DDAD009D0191 /* PhaseTableViewCell.xib */; };
+		F3CD7C3822D9DE07009D0191 /* LunarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD7C3722D9DE07009D0191 /* LunarViewModel.swift */; };
+		F3CD7C3A22D9DE28009D0191 /* PhaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD7C3922D9DE28009D0191 /* PhaseViewModel.swift */; };
+		F3CD7C3C22D9DE53009D0191 /* PhasesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD7C3B22D9DE53009D0191 /* PhasesDataSource.swift */; };
+		F3CD7C3F22D9DE7F009D0191 /* LunarPhaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD7C3E22D9DE7F009D0191 /* LunarPhaseModel.swift */; };
+		F3CD7C4122D9DE98009D0191 /* Moon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD7C4022D9DE98009D0191 /* Moon.swift */; };
+		F3CD7C4322D9DEB2009D0191 /* Phase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD7C4222D9DEB2009D0191 /* Phase.swift */; };
+		F3CD7C4622D9DED9009D0191 /* AerisAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD7C4522D9DED9009D0191 /* AerisAPI.swift */; };
+		F3CD7C4822D9DEF9009D0191 /* LocationTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD7C4722D9DEF9009D0191 /* LocationTracker.swift */; };
+		F3CD7C4A22D9DF1E009D0191 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD7C4922D9DF1E009D0191 /* NetworkController.swift */; };
+		F3CD7C4C22D9DF43009D0191 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD7C4B22D9DF43009D0191 /* Requestable.swift */; };
+		F3CD7C4F22D9E228009D0191 /* Double+WeatherIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD7C4E22D9E228009D0191 /* Double+WeatherIcons.swift */; };
+		F3CD7C5122D9E454009D0191 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD7C5022D9E454009D0191 /* NetworkError.swift */; };
+		F3CD7C5322D9E479009D0191 /* Date+Lunar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD7C5222D9E479009D0191 /* Date+Lunar.swift */; };
+		F3CD7C5522D9E4AE009D0191 /* Dictionary+Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD7C5422D9E4AE009D0191 /* Dictionary+Query.swift */; };
+		F3CD7C5722D9E4D7009D0191 /* String+WeatherIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD7C5622D9E4D7009D0191 /* String+WeatherIcons.swift */; };
+		F3CD7C5922D9E4FC009D0191 /* UIColor+HexColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD7C5822D9E4FC009D0191 /* UIColor+HexColors.swift */; };
+		F3CD7C5B22DA1929009D0191 /* weathericons-regular-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3CD7C5A22DA1924009D0191 /* weathericons-regular-webfont.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F3CD7C1622D9DC31009D0191 /* BeautifulLunaSmile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeautifulLunaSmile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3CD7C1922D9DC31009D0191 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F3CD7C1B22D9DC31009D0191 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F3CD7C1E22D9DC31009D0191 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F3CD7C2022D9DC32009D0191 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3CD7C2322D9DC32009D0191 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F3CD7C2522D9DC32009D0191 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3CD7C2C22D9DCF0009D0191 /* LunarHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunarHeaderView.swift; sourceTree = "<group>"; };
+		F3CD7C2E22D9DD1C009D0191 /* LunarHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LunarHeaderView.xib; sourceTree = "<group>"; };
+		F3CD7C3022D9DD6F009D0191 /* LunarPhaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunarPhaseView.swift; sourceTree = "<group>"; };
+		F3CD7C3222D9DDAD009D0191 /* PhaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseTableViewCell.swift; sourceTree = "<group>"; };
+		F3CD7C3322D9DDAD009D0191 /* PhaseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhaseTableViewCell.xib; sourceTree = "<group>"; };
+		F3CD7C3722D9DE07009D0191 /* LunarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunarViewModel.swift; sourceTree = "<group>"; };
+		F3CD7C3922D9DE28009D0191 /* PhaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseViewModel.swift; sourceTree = "<group>"; };
+		F3CD7C3B22D9DE53009D0191 /* PhasesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhasesDataSource.swift; sourceTree = "<group>"; };
+		F3CD7C3E22D9DE7F009D0191 /* LunarPhaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunarPhaseModel.swift; sourceTree = "<group>"; };
+		F3CD7C4022D9DE98009D0191 /* Moon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moon.swift; sourceTree = "<group>"; };
+		F3CD7C4222D9DEB2009D0191 /* Phase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phase.swift; sourceTree = "<group>"; };
+		F3CD7C4522D9DED9009D0191 /* AerisAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AerisAPI.swift; sourceTree = "<group>"; };
+		F3CD7C4722D9DEF9009D0191 /* LocationTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTracker.swift; sourceTree = "<group>"; };
+		F3CD7C4922D9DF1E009D0191 /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		F3CD7C4B22D9DF43009D0191 /* Requestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
+		F3CD7C4E22D9E228009D0191 /* Double+WeatherIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+WeatherIcons.swift"; sourceTree = "<group>"; };
+		F3CD7C5022D9E454009D0191 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		F3CD7C5222D9E479009D0191 /* Date+Lunar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Lunar.swift"; sourceTree = "<group>"; };
+		F3CD7C5422D9E4AE009D0191 /* Dictionary+Query.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Query.swift"; sourceTree = "<group>"; };
+		F3CD7C5622D9E4D7009D0191 /* String+WeatherIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+WeatherIcons.swift"; sourceTree = "<group>"; };
+		F3CD7C5822D9E4FC009D0191 /* UIColor+HexColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HexColors.swift"; sourceTree = "<group>"; };
+		F3CD7C5A22DA1924009D0191 /* weathericons-regular-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "weathericons-regular-webfont.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3CD7C1322D9DC31009D0191 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3CD7C0D22D9DC31009D0191 = {
+			isa = PBXGroup;
+			children = (
+				F3CD7C1822D9DC31009D0191 /* BeautifulLunaSmile */,
+				F3CD7C1722D9DC31009D0191 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3CD7C1722D9DC31009D0191 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3CD7C1622D9DC31009D0191 /* BeautifulLunaSmile.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3CD7C1822D9DC31009D0191 /* BeautifulLunaSmile */ = {
+			isa = PBXGroup;
+			children = (
+				F3CD7C4D22D9E0E7009D0191 /* TypesAndExtensions */,
+				F3CD7C4422D9DEC3009D0191 /* Network */,
+				F3CD7C3D22D9DE66009D0191 /* Model */,
+				F3CD7C3622D9DDE6009D0191 /* ViewModel */,
+				F3CD7C2B22D9DCB9009D0191 /* View */,
+				F3CD7C1922D9DC31009D0191 /* AppDelegate.swift */,
+				F3CD7C5A22DA1924009D0191 /* weathericons-regular-webfont.ttf */,
+				F3CD7C1B22D9DC31009D0191 /* ViewController.swift */,
+				F3CD7C1D22D9DC31009D0191 /* Main.storyboard */,
+				F3CD7C2022D9DC32009D0191 /* Assets.xcassets */,
+				F3CD7C2222D9DC32009D0191 /* LaunchScreen.storyboard */,
+				F3CD7C2522D9DC32009D0191 /* Info.plist */,
+			);
+			path = BeautifulLunaSmile;
+			sourceTree = "<group>";
+		};
+		F3CD7C2B22D9DCB9009D0191 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3CD7C2C22D9DCF0009D0191 /* LunarHeaderView.swift */,
+				F3CD7C2E22D9DD1C009D0191 /* LunarHeaderView.xib */,
+				F3CD7C3022D9DD6F009D0191 /* LunarPhaseView.swift */,
+				F3CD7C3222D9DDAD009D0191 /* PhaseTableViewCell.swift */,
+				F3CD7C3322D9DDAD009D0191 /* PhaseTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3CD7C3622D9DDE6009D0191 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F3CD7C3722D9DE07009D0191 /* LunarViewModel.swift */,
+				F3CD7C3922D9DE28009D0191 /* PhaseViewModel.swift */,
+				F3CD7C3B22D9DE53009D0191 /* PhasesDataSource.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F3CD7C3D22D9DE66009D0191 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F3CD7C3E22D9DE7F009D0191 /* LunarPhaseModel.swift */,
+				F3CD7C4022D9DE98009D0191 /* Moon.swift */,
+				F3CD7C4222D9DEB2009D0191 /* Phase.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F3CD7C4422D9DEC3009D0191 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F3CD7C4522D9DED9009D0191 /* AerisAPI.swift */,
+				F3CD7C4722D9DEF9009D0191 /* LocationTracker.swift */,
+				F3CD7C4922D9DF1E009D0191 /* NetworkController.swift */,
+				F3CD7C4B22D9DF43009D0191 /* Requestable.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F3CD7C4D22D9E0E7009D0191 /* TypesAndExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				F3CD7C4E22D9E228009D0191 /* Double+WeatherIcons.swift */,
+				F3CD7C5022D9E454009D0191 /* NetworkError.swift */,
+				F3CD7C5222D9E479009D0191 /* Date+Lunar.swift */,
+				F3CD7C5422D9E4AE009D0191 /* Dictionary+Query.swift */,
+				F3CD7C5622D9E4D7009D0191 /* String+WeatherIcons.swift */,
+				F3CD7C5822D9E4FC009D0191 /* UIColor+HexColors.swift */,
+			);
+			path = TypesAndExtensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3CD7C1522D9DC31009D0191 /* BeautifulLunaSmile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3CD7C2822D9DC32009D0191 /* Build configuration list for PBXNativeTarget "BeautifulLunaSmile" */;
+			buildPhases = (
+				F3CD7C1222D9DC31009D0191 /* Sources */,
+				F3CD7C1322D9DC31009D0191 /* Frameworks */,
+				F3CD7C1422D9DC31009D0191 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeautifulLunaSmile;
+			productName = BeautifulLunaSmile;
+			productReference = F3CD7C1622D9DC31009D0191 /* BeautifulLunaSmile.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3CD7C0E22D9DC31009D0191 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Cranberry;
+				TargetAttributes = {
+					F3CD7C1522D9DC31009D0191 = {
+						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = F3CD7C1122D9DC31009D0191 /* Build configuration list for PBXProject "BeautifulLunaSmile" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3CD7C0D22D9DC31009D0191;
+			productRefGroup = F3CD7C1722D9DC31009D0191 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3CD7C1522D9DC31009D0191 /* BeautifulLunaSmile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3CD7C1422D9DC31009D0191 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3CD7C2422D9DC32009D0191 /* LaunchScreen.storyboard in Resources */,
+				F3CD7C3522D9DDAD009D0191 /* PhaseTableViewCell.xib in Resources */,
+				F3CD7C5B22DA1929009D0191 /* weathericons-regular-webfont.ttf in Resources */,
+				F3CD7C2122D9DC32009D0191 /* Assets.xcassets in Resources */,
+				F3CD7C2F22D9DD1C009D0191 /* LunarHeaderView.xib in Resources */,
+				F3CD7C1F22D9DC31009D0191 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3CD7C1222D9DC31009D0191 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3CD7C5122D9E454009D0191 /* NetworkError.swift in Sources */,
+				F3CD7C4C22D9DF43009D0191 /* Requestable.swift in Sources */,
+				F3CD7C4122D9DE98009D0191 /* Moon.swift in Sources */,
+				F3CD7C3C22D9DE53009D0191 /* PhasesDataSource.swift in Sources */,
+				F3CD7C1C22D9DC31009D0191 /* ViewController.swift in Sources */,
+				F3CD7C3A22D9DE28009D0191 /* PhaseViewModel.swift in Sources */,
+				F3CD7C4822D9DEF9009D0191 /* LocationTracker.swift in Sources */,
+				F3CD7C4F22D9E228009D0191 /* Double+WeatherIcons.swift in Sources */,
+				F3CD7C3422D9DDAD009D0191 /* PhaseTableViewCell.swift in Sources */,
+				F3CD7C5922D9E4FC009D0191 /* UIColor+HexColors.swift in Sources */,
+				F3CD7C3122D9DD6F009D0191 /* LunarPhaseView.swift in Sources */,
+				F3CD7C5522D9E4AE009D0191 /* Dictionary+Query.swift in Sources */,
+				F3CD7C1A22D9DC31009D0191 /* AppDelegate.swift in Sources */,
+				F3CD7C2D22D9DCF0009D0191 /* LunarHeaderView.swift in Sources */,
+				F3CD7C5322D9E479009D0191 /* Date+Lunar.swift in Sources */,
+				F3CD7C5722D9E4D7009D0191 /* String+WeatherIcons.swift in Sources */,
+				F3CD7C3F22D9DE7F009D0191 /* LunarPhaseModel.swift in Sources */,
+				F3CD7C4322D9DEB2009D0191 /* Phase.swift in Sources */,
+				F3CD7C3822D9DE07009D0191 /* LunarViewModel.swift in Sources */,
+				F3CD7C4A22D9DF1E009D0191 /* NetworkController.swift in Sources */,
+				F3CD7C4622D9DED9009D0191 /* AerisAPI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F3CD7C1D22D9DC31009D0191 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3CD7C1E22D9DC31009D0191 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F3CD7C2222D9DC32009D0191 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3CD7C2322D9DC32009D0191 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3CD7C2622D9DC32009D0191 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F3CD7C2722D9DC32009D0191 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3CD7C2922D9DC32009D0191 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YZMPQV5A87;
+				INFOPLIST_FILE = BeautifulLunaSmile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BeautifulLunaSmileByCranberry.BeautifulLunaSmile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F3CD7C2A22D9DC32009D0191 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YZMPQV5A87;
+				INFOPLIST_FILE = BeautifulLunaSmile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BeautifulLunaSmileByCranberry.BeautifulLunaSmile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3CD7C1122D9DC31009D0191 /* Build configuration list for PBXProject "BeautifulLunaSmile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3CD7C2622D9DC32009D0191 /* Debug */,
+				F3CD7C2722D9DC32009D0191 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3CD7C2822D9DC32009D0191 /* Build configuration list for PBXNativeTarget "BeautifulLunaSmile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3CD7C2922D9DC32009D0191 /* Debug */,
+				F3CD7C2A22D9DC32009D0191 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3CD7C0E22D9DC31009D0191 /* Project object */;
+}
